@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/goldenbearkin/ts-library-boilerplate.svg?branch=master)](https://travis-ci.org/goldenbearkin/ts-library-boilerplate)
+
 # Typescript Library Boilerplate
 
 A simple tree-shakable typeScript library boilerplate
