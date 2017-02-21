@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/goldenbearkin/ts-library-boilerplate.svg?branch=master)](https://travis-ci.org/goldenbearkin/ts-library-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/goldenbearkin/ts-library-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/goldenbearkin/ts-library-boilerplate?branch=master)
 
 # Typescript Library Boilerplate
 

@@ -10,6 +10,10 @@ os:
 
 before_script:
   - npm install
+  - npm install -g coveralls nyc
 
 script:
   - npm run test && npm run lint
+
+after_success:
+  - nyc report --reporter=text-lcov | coveralls

@@ -6,3 +6,4 @@
 ### Development
 * **code-coverage**: apply nyc for code coverage
 * **ci**: add travis
+* **ci**: apply coveralls
