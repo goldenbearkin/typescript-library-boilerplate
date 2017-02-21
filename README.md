@@ -4,14 +4,19 @@
 
 A simple tree-shakable typeScript library boilerplate
 
+# Stacks
+- **unit test**: mocha, chai
+- **code coverage**: nyc, wallabyjs(optional)
+- **ci**: travis
+
 # How to use?
 
 Just clone it and use it.
 
 # Commands list
 ````
-yarn test           // run test with Mocha
-yarn test:watch     // run test on watch mode
+yarn test           // run test(mocha) and coverage report(nyc)
+yarn test:watch     // run test on watch mode (without coverage report)
 yarn build          // build for both esm (ES5 + ES2015 module) and ES5 UMD bundle, at dist folder.
 yarn lint           // run lint against lib and test
 ````

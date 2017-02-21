@@ -7,8 +7,8 @@
   "module": "ts-library-boilerplate.js",
   "types": "ts-library-boilerplate.d.ts",
   "scripts": {
-    "test": "mocha --compilers ts:ts-node/register test/**/*.spec.ts --recursive",
-    "test:watch": "mocha -w --compilers ts:ts-node/register test/**/*.spec.ts --recursive",
+    "test": "nyc --include lib/**/*.ts --extension .ts --require ts-node/register mocha test/**/*.spec.ts && shx rm -rf ./.nyc_output && shx rm -rf ./coverage",
+    "test:watch": "mocha -w --compilers ts:ts-node/register test/**/*.spec.ts",
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/ts-library-boilerplate.js > dist/ts-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
     "lint": "tslint -c tslint.json lib/**/*.ts test/**/*.ts"
   },
@@ -34,8 +34,10 @@
     "@types/node": "^7.0.5",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
+    "nyc": "^10.1.2",
     "rimraf": "^2.6.0",
     "rollup": "^0.41.4",
+    "shx": "^0.2.2",
     "ts-node": "^2.1.0",
     "tslint": "^4.4.2",
     "typescript": "^2.1.6"
