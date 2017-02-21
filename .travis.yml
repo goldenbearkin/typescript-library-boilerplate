@@ -8,5 +8,8 @@ install: true
 os:
   - linux
 
+before_script:
+  - npm install
+
 script:
-  - yarn test && yarn lint
+  - npm run test && npm run lint
