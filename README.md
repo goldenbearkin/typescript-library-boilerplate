@@ -32,7 +32,7 @@ Delete the wallaby.js if you don't want to use it.
 
 # Please help
 
-Welcom for PR
+Welcome for PR
 
 # License
 
