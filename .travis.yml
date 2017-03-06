@@ -10,10 +10,10 @@ cache:
     - node_modules
 
 before_script:
-- npm install -g coveralls nyc
+- yarn global add coveralls nyc
 
 script:
-  - npm run test && npm run lint
+  - yarn test && yarn lint
 
 after_success:
   - nyc report --reporter=text-lcov | coveralls
