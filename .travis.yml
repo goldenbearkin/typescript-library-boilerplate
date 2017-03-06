@@ -1,16 +1,16 @@
 language: node_js
-node_js: stable
 
 sudo: false
 
-install: true
+node_js: stable
 
-os:
-  - linux
+cache:
+  yarn: true
+  directories:
+    - node_modules
 
 before_script:
-  - npm install
-  - npm install -g coveralls nyc
+- npm install -g coveralls nyc
 
 script:
   - npm run test && npm run lint
