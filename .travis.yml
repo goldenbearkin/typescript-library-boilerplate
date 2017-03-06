@@ -1,19 +1,22 @@
 language: node_js
-
 sudo: false
 
 node_js: stable
-
 cache:
   yarn: true
   directories:
     - node_modules
 
+branches:
+  only:
+    - master
+
 before_script:
-- yarn global add coveralls nyc
+  - yarn global add coveralls nyc
 
 script:
   - yarn test && yarn lint
 
 after_success:
   - nyc report --reporter=text-lcov | coveralls
+  - yarn semantic-release
