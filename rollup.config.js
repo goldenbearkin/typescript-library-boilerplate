@@ -1,6 +1,6 @@
 export default {
   format: 'umd',
-  moduleName: 'ts-library-boilerplate',
+  moduleName: 'index',
   external: [
     // put some third party libraries here
   ],

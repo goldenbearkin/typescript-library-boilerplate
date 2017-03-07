@@ -1,4 +1,4 @@
-import { writeFileSync, readFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 
 const packageJson = JSON.parse(readFileSync('./dist/package.json').toString());
 delete packageJson.devDependencies;

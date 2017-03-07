@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { add } from '../lib/ts-library-boilerplate';
+import { add } from '../lib';
 
 describe('# add', () => {
     it('shoudl add two numbers', () => {

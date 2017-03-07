@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { minus } from '../lib/ts-library-boilerplate';
+import { minus } from '../lib';
 
 describe('# minus', () => {
     it('shoudl minus two numbers', () => {

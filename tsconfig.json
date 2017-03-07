@@ -21,6 +21,6 @@
     ]
   },
   "files": [
-    "./lib/ts-library-boilerplate.ts"
+    "./lib/index.ts"
   ]
 }
