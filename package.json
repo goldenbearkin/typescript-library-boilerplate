@@ -1,6 +1,6 @@
 {
   "name": "ts-library-boilerplate",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0",
   "description": "A simple tree-shakable typeScript library boilerplate",
   "main": "index.bundle.js",
   "jsnext:main": "index.js",
@@ -11,8 +11,7 @@
     "test:watch": "mocha -w --compilers ts:ts-node/register test/**/*.spec.ts",
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/index.js > dist/index.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
     "lint": "tslint -c tslint.json lib/**/*.ts test/**/*.ts",
-    "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -41,7 +40,6 @@
     "nyc": "^10.1.2",
     "rimraf": "^2.6.0",
     "rollup": "^0.41.4",
-    "semantic-release": "^6.3.2",
     "shx": "^0.2.2",
     "ts-node": "^2.1.0",
     "tslint": "^4.4.2",
