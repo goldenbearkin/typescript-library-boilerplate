@@ -1,5 +1,5 @@
 {
-  "name": "ts-library-boilerplate",
+  "name": "typescript-library-boilerplate",
   "version": "0.0.0",
   "description": "A simple tree-shakable typeScript library boilerplate",
   "main": "index.bundle.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/goldenbearkin/ts-library-boilerplate.git"
+    "url": "https://github.com/goldenbearkin/typescript-library-boilerplate.git"
   },
   "keywords": [
     "typescript",
@@ -26,9 +26,9 @@
   "author": "Jason Hui <huihangkin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goldenbearkin/ts-library-boilerplate/issues"
+    "url": "https://github.com/goldenbearkin/typescript-library-boilerplate/issues"
   },
-  "homepage": "https://github.com/goldenbearkin/ts-library-boilerplate#readme",
+  "homepage": "https://github.com/goldenbearkin/typescript-library-boilerplate#readme",
   "devDependencies": {
     "@types/chai": "^3.4.35",
     "@types/mocha": "^2.2.39",
