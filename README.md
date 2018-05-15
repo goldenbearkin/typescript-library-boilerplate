@@ -1,9 +1,9 @@
 [![Build Status](https://travis-ci.org/goldenbearkin/typescript-library-boilerplate.svg?branch=master)](https://travis-ci.org/goldenbearkin/typescript-library-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/goldenbearkin/typescript-library-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/goldenbearkin/typescript-library-boilerplate?branch=master)
 
-# Typescript Library Boilerplate
+# TypeScript Library Boilerplate
 
-A simple tree-shakable typeScript library boilerplate
+A simple tree-shakable TypeScript library boilerplate
 
 # Stacks
 - **unit test**: mocha, chai
