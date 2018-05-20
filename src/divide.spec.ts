@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { divide } from '../lib';
+import { divide } from '../src';
 
 describe('# add', () => {
     it('shoudl add two numbers', () => {

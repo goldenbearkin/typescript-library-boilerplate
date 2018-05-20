@@ -1,8 +1,8 @@
 import { expect } from 'chai';
-import { multiply } from '../lib';
+import { minus } from '../src';
 
 describe('# minus', () => {
     it('shoudl minus two numbers', () => {
-        expect(multiply(4, 7)).to.equal(28);
+        expect(minus(10, 2)).to.equal(8);
     });
 });
