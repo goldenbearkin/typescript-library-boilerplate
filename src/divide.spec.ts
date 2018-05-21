@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { divide } from '../src';
 
 describe('# add', () => {
-    it('shoudl add two numbers', () => {
+    it('should add two numbers', () => {
         expect(divide(64, 8)).to.equal(8);
     });
 });
