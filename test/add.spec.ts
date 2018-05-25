@@ -1,8 +1,8 @@
 import { expect } from 'chai';
-import { divide } from '../src';
+import { add } from '../lib';
 
 describe('# add', () => {
     it('should add two numbers', () => {
-        expect(divide(64, 8)).to.equal(8);
+        expect(add(3, 5)).to.equal(8);
     });
 });
