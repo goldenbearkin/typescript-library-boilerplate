@@ -3,7 +3,7 @@
 *.sublime-project
 *.sublime-workspace
 .settings
-.vscode
+#.vscode
 
 # Installed libs
 node_modules/
