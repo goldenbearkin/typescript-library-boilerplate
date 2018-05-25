@@ -1,11 +1,11 @@
 module.exports = wallaby => ({
   files: [
-    'src/**/*.ts',
+    'lib/**/*.ts',
     { pattern: 'node_modules/chai/chai.js', instrument: false },
     // { pattern: 'src/**/*.js', instrument: true, load: true, ignore: false }
   ],
 
-  tests: ['src/**/*spec.ts'],
+  tests: ['test/**/*spec.ts'],
 
   compilers: {
     '**/*.ts': wallaby.compilers.typeScript({
