@@ -11,7 +11,8 @@
     "test:watch": "mocha -w --compilers ts:ts-node/register test/**/*.spec.ts",
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
     "lint": "tslint -c tslint.json lib/**/*.ts test/**/*.ts",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "prepush": "npm test"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "chai": "^3.5.0",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.14.3",
     "mocha": "^3.2.0",
     "nyc": "^10.1.2",
     "rimraf": "^2.6.0",
