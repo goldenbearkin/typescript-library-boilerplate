@@ -20,6 +20,9 @@
       "chai"
     ]
   },
+  "rules": {
+    "no-implicit-dependencies": [true, "dev"]
+  },
   "files": [
     "./lib/index.ts"
   ]
