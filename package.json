@@ -11,8 +11,8 @@
     "test:watch": "mocha -w --compilers ts:ts-node/register test/**/*.spec.ts",
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
     "lint": "tslint -c tslint.json lib/**/*.ts test/**/*.ts",
-    "commit": "git-cz",
-    "prepush": "npm test"
+    "prepush": "npm test",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
