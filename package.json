@@ -13,6 +13,9 @@
     "lint": "tslint -c tslint.json lib/**/*.ts test/**/*.ts",
     "commit": "git-cz"
   },
+  "engines": {
+    "node": ">=6.0.0 <9"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/goldenbearkin/typescript-library-boilerplate.git"
