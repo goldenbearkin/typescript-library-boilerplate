@@ -1,7 +1,16 @@
 {
     "extends": "tslint:latest",
     "rules": {
+        "align": [
+            true,
+            "parameters"
+        ],
+        "no-console": true,
         "no-implicit-dependencies": [true, "dev"],
+        "max-line-length": [
+            true,
+            160
+        ],
         "quotemark": [
             true,
             "single",
