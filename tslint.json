@@ -1,6 +1,7 @@
 {
     "extends": "tslint:latest",
     "rules": {
+        "no-null-keyword": true,
         "align": [
             true,
             "parameters"
