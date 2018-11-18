@@ -5,7 +5,7 @@ module.exports = wallaby => ({
     // { pattern: 'src/**/*.js', instrument: true, load: true, ignore: false }
   ],
 
-  tests: ['test/**/*spec.ts'],
+  tests: ['lib/**/*spec.ts'],
 
   compilers: {
     '**/*.ts': wallaby.compilers.typeScript({
