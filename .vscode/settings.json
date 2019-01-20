@@ -1,5 +1,5 @@
 {
-    "mocha.files.glob": "test/**/*.spec.ts",
+    "mocha.files.glob": "lib/**/*.spec.ts",
     "mocha.runTestsOnSave": "false",
      "mocha.requires": [
         "ts-node/register"
