@@ -1,5 +1,10 @@
 {
     "extends": "tslint:latest",
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**"
+        ]
+    },
     "rules": {
         "no-null-keyword": true,
         "align": [
