@@ -1,0 +1,4 @@
+[submodule "devops"]
+	path = devops
+	url = https://github.com/olivercaine/devops.git
+	branch = master
