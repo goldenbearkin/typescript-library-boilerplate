@@ -10,7 +10,7 @@
     "test": "nyc --include lib/**/*.ts --extension .ts --require ts-node/register mocha lib/**/*.spec.ts && shx rm -rf ./coverage",
     "test:watch": "mocha -w --compilers ts:ts-node/register lib/**/*.spec.ts",
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
-    "build:docker": "cp devops/.dockerignore . && docker build -f devops/Dockerfile.build . --rm && rm .dockerignore;",
+    "build:docker": "docker build -f devops/Dockerfile.build . --rm",
     "lint": "tslint -c tslint.json lib/**/*.ts",
     "prepush": "npm test",
     "commit": "git-cz"
