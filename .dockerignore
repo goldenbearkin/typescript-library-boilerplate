@@ -7,3 +7,4 @@ coverage
 .idea/
 .yarn-cache
 devops
+.nyc_output
