@@ -24,8 +24,7 @@ yarn lint           // run lint against lib and test
 
 # Testing
 
-This boilerplate use Mocha as test framework. Wallaby.js is just supplementary for development.
-Delete the wallaby.js if you don't want to use it.
+This boilerplate use Mocha as test framework.
 
 # Reference
 [http://blog.mgechev.com/2017/01/21/distributing-an-angular-library-aot-ngc-types](http://blog.mgechev.com/2017/01/21/distributing-an-angular-library-aot-ngc-types/)
