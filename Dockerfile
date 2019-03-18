@@ -2,7 +2,7 @@ FROM base:latest
 
 # Install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install --prefer-offline
 
 # Lint, test and build app
 COPY . ./
