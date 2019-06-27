@@ -1,8 +1,4 @@
 {
-   "mocha.files.glob": "lib/**/*.spec.ts",
-   "mocha.files.ignore": "**/.git/**/*,**/node_modules/**/*",
-   "mocha.runTestsOnSave": "true",
-   "mocha.requires": [
-      "ts-node/register"
-   ]
+   "mochaExplorer.files": "lib/**/*.spec.ts",
+   "mochaExplorer.require": "ts-node/register"
 }
