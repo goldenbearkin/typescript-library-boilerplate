@@ -1,4 +1,4 @@
 {
-   "mochaExplorer.files": "lib/**/*.spec.ts{,x}",
+   "mochaExplorer.files": "lib/**/*.spec.*",
    "mochaExplorer.require": "ts-node/register"
 }
