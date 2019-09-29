@@ -1,4 +1,4 @@
-FROM base:latest
+FROM boilerplate-stack/base:latest
 
 # Install dependencies
 COPY package*.json ./
