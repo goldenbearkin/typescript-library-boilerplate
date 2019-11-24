@@ -1,4 +1,4 @@
-FROM olliecaine/base:1.0.2
+FROM olliecaine/base:1.0.9
 
 # Install dependencies
 COPY package*.json ./
