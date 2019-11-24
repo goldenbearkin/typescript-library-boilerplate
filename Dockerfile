@@ -1,4 +1,4 @@
-FROM boilerplate-stack/base:latest
+FROM olliecaine/base:1.0.2
 
 # Install dependencies
 COPY package*.json ./
