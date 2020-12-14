@@ -15,7 +15,7 @@
     "commit": "git-cz"
   },
   "engines": {
-    "node": ">=6.0.0 <9"
+    "node": ">=8.0.0 <9"
   },
   "repository": {
     "type": "git",
