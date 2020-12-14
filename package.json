@@ -58,5 +58,8 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2"
   }
 }
