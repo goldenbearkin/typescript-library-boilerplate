@@ -1,6 +1,4 @@
 /**
  * This is just an example.
  */
-export function divide(a: number, b: number) {
-    return a / b;
-}
+export const divide = (a: number, b: number) => a / b;
