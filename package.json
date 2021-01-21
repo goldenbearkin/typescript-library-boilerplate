@@ -63,7 +63,6 @@
     "tslint": "^5.18.0",
     "typescript": "^3.3.4000"
   },
-  "dependencies": [],
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
