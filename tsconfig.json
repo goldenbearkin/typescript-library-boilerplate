@@ -20,7 +20,7 @@
       "chai"
     ]
   },
-  "include": [
-    "lib/**/*.ts"
+  "files": [
+    "lib/index.ts"
   ]
 }

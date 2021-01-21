@@ -9,7 +9,7 @@
   "scripts": {
     "test": "nyc --include lib/**/*.ts --extension .ts --require ts-node/register mocha lib/**/*.spec.ts && shx rm -rf ./coverage",
     "test:watch": "mocha -w --compilers ts:ts-node/register 'lib/**/*.spec.ts'",
-    "build": "rimraf dist && tsc -p tsconfig.dist.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
+    "build": "rimraf dist && tsc -p tsconfig.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
     "lint": "eslint -c .eslintrc.js --ext .ts lib",
     "lint:fix": "npm run lint -- --fix",
     "commit": "git-cz"
