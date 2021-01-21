@@ -12,6 +12,7 @@
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
     "lint": "tslint -c tslint.json lib/**/*.ts",
     "lint:fix": "tslint -c tslint.json lib/**/*.ts --fix",
+    "lint-staged": "lint-staged",
     "commit": "git-cz"
   },
   "husky": {
@@ -21,8 +22,10 @@
     }
   },
   "lint-staged": {
-    "*.ts": [
-      "tslint -c tslint.json lib/**/*.ts --fix"
+    "*.{ts}": [
+      "npm run lint",
+      "tslint -c tslint.json lib/**/*.ts --fix",
+      "git add"
     ]
   },
   "engines": {
