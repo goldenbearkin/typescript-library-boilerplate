@@ -21,7 +21,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "tslint -c tslint.json lib/**/*.ts --fix"
+    "*.ts": ["tslint -c tslint.json lib/**/*.ts --fix"]
   },
   "engines": {
     "node": ">=8.0.0 <9"
