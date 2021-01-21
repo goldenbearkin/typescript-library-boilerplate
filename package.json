@@ -14,9 +14,15 @@
     "lint:fix": "tslint -c tslint.json lib/**/*.ts --fix",
     "commit": "git-cz"
   },
+  "lint-staged": {
+    "*.ts": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix",
+      "pre-commit": "lint-staged",
       "pre-push": "concurrently 'npm run lint' 'npm test'"
     }
   },
@@ -47,7 +53,8 @@
     "commitizen": "^2.10.1",
     "concurrently": "^4.1.2",
     "cz-conventional-changelog": "^2.1.0",
-    "husky": "^1.3.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
     "mocha": "^5.2.0",
     "nyc": "^11.8.0",
     "rimraf": "^2.6.3",
