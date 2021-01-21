@@ -11,10 +11,12 @@
     "test:watch": "mocha -w --compilers ts:ts-node/register 'lib/**/*.spec.ts'",
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
     "lint": "tslint -c tslint.json lib/**/*.ts",
+    "lint:fix": "tslint -c tslint.json lib/**/*.ts --fix",
     "commit": "git-cz"
   },
   "husky": {
     "hooks": {
+      "pre-commit": "npm run lint:fix",
       "pre-push": "concurrently 'npm run lint' 'npm test'"
     }
   },
