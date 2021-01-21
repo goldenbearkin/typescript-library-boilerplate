@@ -20,3 +20,4 @@ SyntaxError: Unexpected token {
 Cause: Wrong version of Node used
 
 Fix: Try switching to Node 10 or above
+
