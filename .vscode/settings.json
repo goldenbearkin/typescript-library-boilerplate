@@ -1,7 +1,7 @@
 {
   "mochaExplorer.files": "lib/**/*.spec.*",
   "mochaExplorer.require": "ts-node/register",
-  // "editor.codeActionsOnSave": {
-  //   "source.fixAll.eslint": true
-  // }
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
