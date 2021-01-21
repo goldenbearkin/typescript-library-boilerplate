@@ -12,6 +12,11 @@ https://github.com/typescript-eslint/tslint-to-eslint-config/blob/master/docs/FA
 Happy linting! 💖
 */
 module.exports = {
+    "settings": {
+        "import/core-modules": [
+            "chai"
+        ]
+    },
     "env": {
         "browser": true,
         "es6": true,
@@ -19,7 +24,7 @@ module.exports = {
     },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "project": "tsconfig.json",
+        "project": "tsconfig-esm.json",
         "sourceType": "module"
     },
     "plugins": [
