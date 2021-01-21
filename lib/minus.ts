@@ -2,6 +2,6 @@
  * This is just an exaample.
  */
 export function minus(a: number, b: number) {
-    let lol = "pop";
+    let lol = "poppy";
     return a - b;
 }

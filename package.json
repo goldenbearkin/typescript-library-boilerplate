@@ -15,10 +15,7 @@
     "commit": "git-cz"
   },
   "lint-staged": {
-    "*.ts": [
-      "npm run lint:fix",
-      "git add"
-    ]
+    "*.{js,jsx,ts,tsx}": "npm run lint:fix"
   },
   "husky": {
     "hooks": {
