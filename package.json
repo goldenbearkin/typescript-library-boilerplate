@@ -14,14 +14,14 @@
     "lint:fix": "tslint -c tslint.json lib/**/*.ts --fix",
     "commit": "git-cz"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "npm run lint:fix"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
       "pre-push": "concurrently 'npm run lint' 'npm test'"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "tslint -c tslint.json lib/**/*.ts --fix"
   },
   "engines": {
     "node": ">=8.0.0 <9"
