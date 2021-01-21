@@ -16,7 +16,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix",
+      "post-commit": "npm run lint:fix",
       "pre-push": "concurrently 'npm run lint' 'npm test'"
     }
   },
