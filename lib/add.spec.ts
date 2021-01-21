@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { add } from '../lib';
+import { add } from '.';
 
 describe('# add', () => {
     it('should add two numbers', () => {

@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { multiply } from '../lib';
+import { multiply } from '.';
 
 describe('# minus', () => {
     it('should minus two numbers', () => {
