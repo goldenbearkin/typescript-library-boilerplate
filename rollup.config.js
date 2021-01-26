@@ -1,6 +1,8 @@
 export default {
-  format: 'umd',
-  moduleName: 'typescript-library-boilerplate',
+  output: {
+    format: 'umd',
+    name: 'typescript-library-boilerplate'
+  },
   external: [
     // put some third party libraries here
   ],
