@@ -1,14 +1,28 @@
 {
   "compilerOptions": {
+    // Target es5 for IE9/10
     "target": "es5",
+    // https://www.typescriptlang.org/tsconfig#module
     "module": "commonjs",
+    // Enables the generation of sourcemap files.
     "sourceMap": true,
+    // Enables experimental support for emitting type metadata for decorators which works with the module reflect-metadata.
     "emitDecoratorMetadata": true,
+    // https://www.typescriptlang.org/tsconfig#experimentalDecorators
     "experimentalDecorators": true,
+    // When strictNullChecks is true, null and undefined have their own distinct types and you’ll get a type error if you try to use them where a concrete value is expected.
     "strictNullChecks": true,
-    "stripInternal": true,
+    // Strips all comments from TypeScript files when converting into JavaScript.
+    "removeComments": true,    
+    // Generate .d.ts files for every TypeScript or JavaScript file inside your project. These .d.ts files are type definition files which describe the external API of your module.
     "declaration": true,
+    // Report errors on unused parameters in functions.
+    "noUnusedParameters": true,    
+    // Turning on noImplicitAny however TypeScript will issue an error whenever it would have inferred any:
+    "noImplicitAny": true,
+    // If specified, .js (as well as .d.ts, .js.map, etc.) files will be emitted into this directory. 
     "outDir": "./dist",
+    // https://www.typescriptlang.org/tsconfig#lib
     "lib": ["es2015"],
     "typeRoots": [
       "./node_modules/@types",
