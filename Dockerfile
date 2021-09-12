@@ -1,1 +1,0 @@
-FROM olliecaine/base:master
