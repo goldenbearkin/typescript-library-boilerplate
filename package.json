@@ -8,12 +8,12 @@
   "types": "index.d.ts",
   "scripts": {
     "docker": "docker run -v $PWD:/usr/src/app -w /usr/src/app node:16-alpine3.14",
-    "test": "nyc --include lib/**/*.ts --extension .ts --require ts-node/register mocha lib/**/*.spec.ts && shx rm -rf ./coverage",
-    "test:watch": "mocha -w --compilers ts:ts-node/register 'lib/**/*.spec.ts'",
+    "test": "nyc --include src/**/*.ts --extension .ts --require ts-node/register mocha src/**/*.spec.ts && shx rm -rf ./coverage",
+    "test:watch": "mocha -w --compilers ts:ts-node/register 'src/**/*.spec.ts'",
     "test:docker": "npm run docker -- npm run test",
     "build": "rimraf dist && tsc -p tsconfig-esm.json && rollup -c rollup.config.js dist/index.js > dist/typescript-library-boilerplate.bundle.js && cp package.json dist && ts-node tools/cleanup.ts && cp README.md dist",
     "build:docker": "npm run docker -- npm run build",
-    "lint": "eslint -c .eslintrc.js --ext .ts lib",
+    "lint": "eslint -c .eslintrc.js --ext .ts src",
     "lint:fix": "npm run lint -- --fix",
     "commit": "git-cz",
     "ci:docker": "npm run docker -- npm ci"
