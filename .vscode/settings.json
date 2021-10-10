@@ -1,6 +1,9 @@
 {
   "mochaExplorer.files": "lib/**/*.spec.*",
   "mochaExplorer.require": "ts-node/register",
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#3db878"
+  },  
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }
