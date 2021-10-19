@@ -8,6 +8,9 @@ on:
     branches: [ modpack/latest ]
   pull_request:
     branches: [ modpack/latest ]
+  schedule:
+    # Every Friday at 6pm
+    - cron: "0 18 * * FRI"
 
 jobs:
   build:
