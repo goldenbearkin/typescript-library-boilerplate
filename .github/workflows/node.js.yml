@@ -5,9 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ modpack/latest ]
-  pull_request:
-    branches: [ modpack/latest ]
+    branches: ['**']
   schedule:
     # Every Friday at 6pm
     - cron: "0 18 * * FRI"
