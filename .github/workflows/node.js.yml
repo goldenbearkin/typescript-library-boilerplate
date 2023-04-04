@@ -9,12 +9,13 @@ on:
   schedule:
     # Every Friday at 6pm
     - cron: "0 18 * * FRI"
+  workflow_dispatch: # Enables running workflow manually
 
 jobs:
   build:
-
+    timeout-minutes: 30
     runs-on: ubuntu-latest
-
+    
     strategy:
       matrix:
         node-version: [8.x, 10.x, 12.x, 14.x, 16.x]

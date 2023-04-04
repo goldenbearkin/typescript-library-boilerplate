@@ -1,8 +1,8 @@
-import { expect } from 'chai';
-import { divide } from '.';
+import { expect } from 'chai'
+import { divide } from '.'
 
 describe('# divide', () => {
-    it('should divide two numbers', () => {
-        expect(divide(64, 8)).to.equal(8);
-    });
-});
+  it('should divide two numbers', () => {
+    expect(divide(64, 8)).to.equal(8)
+  })
+})

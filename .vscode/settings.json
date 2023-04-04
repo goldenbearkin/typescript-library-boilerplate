@@ -1,10 +1,24 @@
 {
-  "mochaExplorer.files": "lib/**/*.spec.*",
-  "mochaExplorer.require": "ts-node/register",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "editor.formatOnSave": true,
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#3db878"
-  },  
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+  },
+  "mochaExplorer.files": "lib/**/*.spec.*",
+  "mochaExplorer.require": "ts-node/register",
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onSave",
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "eslint.codeActionsOnSave.mode": "problems",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.format.semicolons": "remove",
+  "editor.tabSize": 2
 }

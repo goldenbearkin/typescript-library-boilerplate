@@ -1,8 +1,8 @@
-import { expect } from 'chai';
-import { minus } from '.';
+import { expect } from 'chai'
+import { minus } from '.'
 
 describe('# minus', () => {
-    it('should minus two numbers', () => {
-        expect(minus(10, 2)).to.equal(8);
-    });
-});
+  it('should minus two numbers', () => {
+    expect(minus(10, 2)).to.equal(8)
+  })
+})

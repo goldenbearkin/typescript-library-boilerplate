@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/goldenbearkin/typescript-library-boilerplate.svg?branch=master)](https://travis-ci.org/goldenbearkin/typescript-library-boilerplate)
+[![Node.js CI](https://github.com/olivercaine/typescript-library-boilerplate/actions/workflows/node.js.yml/badge.svg)](https://github.com/olivercaine/typescript-library-boilerplate/actions/workflows/node.js.yml)
 [![Coverage Status](https://coveralls.io/repos/github/goldenbearkin/typescript-library-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/goldenbearkin/typescript-library-boilerplate?branch=master)
 
 # TypeScript Library Boilerplate
