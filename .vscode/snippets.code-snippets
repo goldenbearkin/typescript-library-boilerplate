@@ -1,0 +1,24 @@
+{
+  // Generate new snippets at https://snippet-generator.app/
+  "A tsdoc commented function": {
+    "prefix": "func",
+    "body": [
+      "/**",
+      " * An example {@link https://tsdoc.org/} commented function",
+      " *",
+      " * @param param Parameter description",
+      " * @returns True",
+      " *",
+      " * @example",
+      " * ```",
+      " * func('string')",
+      " * ```",
+      " */",
+      "export const func = (param: string): boolean => {",
+      "  return !!param",
+      "}",
+      ""
+    ],
+    "description": "A tsdoc commented function"
+  }
+}
