@@ -43,12 +43,12 @@
   },
   "homepage": "https://github.com/goldenbearkin/typescript-library-boilerplate#readme",
   "devDependencies": {
-    "@types/chai": "4.2.14",
+    "@types/chai": "4.2.22",
     "@types/mocha": "5.2.7",
-    "@types/node": "10.17.49",
-    "@typescript-eslint/eslint-plugin": "4.6.0",
+    "@types/node": "10.17.60",
+    "@typescript-eslint/eslint-plugin": "4.6.1",
     "@typescript-eslint/eslint-plugin-tslint": "4.8.2",
-    "@typescript-eslint/parser": "4.14.1",
+    "@typescript-eslint/parser": "4.14.2",
     "chai": "4.2.0",
     "commitizen": "2.10.1",
     "concurrently": "4.1.2",
@@ -56,7 +56,7 @@
     "eslint": "6.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-jsdoc": "30.7.8",
+    "eslint-plugin-jsdoc": "30.7.13",
     "eslint-plugin-no-null": "1.0.2",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-node": "^11.1.0",
@@ -70,7 +70,7 @@
     "rollup": "0.59.4",
     "shx": "0.2.2",
     "ts-node": "6.2.0",
-    "typescript": "3.9.7"
+    "typescript": "3.9.10"
   },
   "config": {
     "commitizen": {
