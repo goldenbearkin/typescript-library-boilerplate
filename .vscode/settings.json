@@ -5,7 +5,7 @@
   },
   "editor.formatOnSave": true,
   "workbench.colorCustomizations": {
-    "titleBar.activeForeground": "#3db878"
+    "titleBar.activeForeground": "#5fe8a1"
   },
   "mochaExplorer.files": "lib/**/*.spec.*",
   "mochaExplorer.require": "ts-node/register",
