@@ -4,9 +4,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ modpack/latest ]
   pull_request:
-    branches: [ main ]
+    branches: [ modpack/latest ]
   workflow_dispatch: # Enables running workflow manually
 
 jobs:
