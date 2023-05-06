@@ -6,7 +6,7 @@ on:
   push:
     branches: [ modpack/latest ]
   pull_request:
-    branches: [ modpack/latest ]
+    branches: ['**']
   workflow_dispatch: # Enables running workflow manually
 
 jobs:
